@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "hud-works",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "HUD Works",
+	"description": "A simple mod to add extra effects to the HUD to provide the player extra information.",
 	"authors": [
-		"Me!"
+		"SavageGarrett"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/SavageGarrett/hud-works",
+		"sources": "https://github.com/SavageGarrett/hud-works"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/hud-works/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.garrett.HUDWorksMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.garrett.HUDWorksModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"hud-works.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "hud-works.client.mixins.json",
 			"environment": "client"
 		}
 	],
